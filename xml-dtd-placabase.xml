@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE placabase [
+    <!ELEMENT placabase (componentes)>
+    <!ELEMENT componentes (microprocesador, memoria, modelo, fabricante)>
+    <!ELEMENT microprocesador (#PCDATA)>
+    <!ELEMENT memoria (#PCDATA)>
+    <!ELEMENT modelo (#PCDATA)>
+    <!ELEMENT fabricante (Asus, Intel)>
+    <!ELEMENT Asus EMPTY>
+    <!ELEMENT Intel EMPTY>
+]>
+<placabase>
+    <componentes>
+        <microprocesador> AMD Ryzen 9 5950x 3.4 ghz </microprocesador>
+
+        <memoria> GeForce RTX 3090 NVIDIA  </memoria>
+
+        <modelo> MSI TRX40 </modelo>
+
+        <fabricante>
+            <Asus />
+            <Intel />
+        </fabricante>
+    </componentes>
+</placabase>
