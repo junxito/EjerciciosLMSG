@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE animales [
-  <!ELEMENT animales (animal*)>
-  <!ELEMENT animal (#PCDATA)>
+  <!ELEMENT animales (perro , gato)>
+  <!ELEMENT perro (#PCDATA)>
+  <!ELEMENT gato (#PCDATA)>
 ]>
 
 <animales>
