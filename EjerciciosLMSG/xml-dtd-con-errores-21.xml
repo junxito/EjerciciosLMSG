@@ -3,7 +3,7 @@
   <!ELEMENT cuadros (cuadro*)>
   <!ELEMENT cuadro EMPTY>
   <!ATTLIST cuadro titulo ID #REQUIRED>
-  <!ATTLIST cuadro autor CDATA #REQUIRED>
+  <!ATTLIST cuadro autor CDATA #EMPLIED>
 ]>
 
 <cuadros>

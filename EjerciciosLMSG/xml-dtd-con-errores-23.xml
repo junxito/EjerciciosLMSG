@@ -2,8 +2,8 @@
 <!DOCTYPE futbol [
   <!ELEMENT futbol (jugador*)>
   <!ELEMENT jugador EMPTY>
-  <!ATTLIST jugador nombre NMTOKENS #REQUIRED>
-  <!ATTLIST jugador codigo ID #REQUIRED>
+  <!ATTLIST jugador nombre CDATA #REQUIRED>
+  <!ATTLIST jugador codigo CDATA #REQUIRED>
 ]>
 
 <futbol>
