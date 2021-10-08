@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE musica [
+    <!ELEMENT musica (artistas, canciones, nacionalidades)>
+    <!ELEMENT artistas (artista*)>
+    <!ELEMENT canciones (cancion*)>
+    <!ELEMENT nacionalidades (nacionalidad*)>
+    <!ELEMENT artista EMPTY>
+    <!ELEMENT cancion EMPTY>
+    <!ELEMENT nacionalidad EMPTY>
+    <!ATTLIST artista nombre ID #REQUIRED>
+    <!ATTLIST artista fecha_de_nacimiento NMTOKENS #REQUIRED>
+    <!ATTLIST artista nacionalidad IDREF #REQUIRED>
+    <!ATTLIST cancion nombre NMTOKEN #REQUIRED>
+    <!ATTLIST cancion duracion NMTOKENS #REQUIRED>
+    <!ATTLIST cancion artista IDREFS #REQUIRED>
+    <!ATTLIST nacionalidad nombre NMTOKEN #REQUIRED>
+    <!ATTLIST nacionalidad codigo ID #REQUIRED>
+
+]>
+
+    <musica>
+        <artistas>
+            <artista nombre="Mashiro_Ayano" fecha_de_nacimiento="fecha 23_04_1998" nacionalidad="jap" />
+            <artista nombre="Hiroyuki_Sawano" fecha_de_nacimiento="fecha 12_09_1980" nacionalidad="jap2" />
+        </artistas>
+        <canciones>
+            <cancion nombre="Alive" duracion="min 3:56" artista="Mashiro_Ayano" />
+            <cancion nombre="Remember" duracion="min 5:06" artista="Hiroyuki_Sawano" />
+        </canciones>
+        <nacionalidades>
+            <nacionalidad nombre="Japon" codigo="jap" />
+            <nacionalidad nombre="Japon" codigo="jap2" />
+        </nacionalidades>
+    </musica>
