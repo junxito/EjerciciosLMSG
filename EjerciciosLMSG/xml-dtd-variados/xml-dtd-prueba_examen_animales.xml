@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE prueba_examen_animales [
+    <!ELEMENT animales (reales, miticos)>
+    <!ELEMENT reales (reino_animal)>
+    <!ELEMENT reino_animal (#PCDATA | mamiferos | oviparos | reptiles | peces)*>
+    <!ELEMENT mamiferos (mamifero)*>
+    <!ELEMENT mamifero EMPTY>
+    <!ATTLIST mamifero nombre ID #REQUIRED
+                       alias CDATA #FIXED
+                       raza NMTOKENS #EMPLIED>
+    <!ELEMENT oviparos (oviparo)>
+    <!ELEMENT oviparo EMPTY>
+    <!ATTLIST oviparo nombre  ID #REQUIRED>
+    <!ELEMENT reptiles (#PCDATA)>
+    <!ELEMENT peces (#PCDATA)>
+    <!ENTITY sal " de agua salada">
+    <!ELEMENT mejor_animal EMPTY>
+    <!ATTLIST mejor_animal nombre IDREFS #REQUIRED>
+    <!ELEMENT miticos (mitologia)>
+    <!ELEMENT mitologia (culturas, criaturas)>
+    <!ELEMENT culturas (cultura+)>
+    <!ELEMENT cultura EMPTY>
+    <!ATTLIST cultura nombre  ID #REQUIRED
+                      pais NMTOKEN #EMPLIED>
+    <!ELEMENT criaturas (criatura+)>
+    <!ELEMENT criatura EMPTY>
+    <!ATTLIST criatura nombre CDATA #REQUIRED
+                       cultura IDREF #EMPLIED>
+                       
+    
+
+
+]>
+
+    <animales>
+        <reales>
+            <reino_animal>
+                <mamiferos>
+                    <mamifero nombre: "perro" alias: "fluffy" raza: "husky_siberiano"/>
+                    <mamifero nombre: "koala" alias: "fluffy"/>
+                    <mamifero nombre: "lobo"/>               
+                </mamiferos>
+                <oviparos>
+                    <oviparo nombre: "pato"/>
+                </oviparos>
+                <reptiles>salamandra</reptiles>
+                <peces>atun &sal; </peces>
+                anfibios
+                <mejor_animal nombre: "pato"/>
+                <mejor_animal nombre: "lobo"/>
+                
+            </reino_animal>
+        </reales>
+        <miticos>
+            <mitologia >
+                <culturas>
+                    <cultura nombre: "griega" pais: "grecia"/>
+                    <cultura nombre: "japonesa" pais: "japon"/>
+                </culturas>
+                <criaturas>
+                    <criatura nombre: "gorgona" cultura: "griega"/>
+                    <criatura nombre: "kitsune" cultura: "japonesa"/>
+                </criaturas>
+            </mitologia >
+        </miticos>
+    </animales>
