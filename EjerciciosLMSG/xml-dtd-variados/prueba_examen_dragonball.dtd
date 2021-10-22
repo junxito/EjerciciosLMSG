@@ -1,0 +1,27 @@
+    <!ELEMENT personajes (humanos? | aliens?)*>
+    <!ELEMENT humanos (protagonistas)>
+    <!ELEMENT protagonistas (saiyans, ordinarios, luchadores, extras, mejor_personaje)>
+    <!ELEMENT saiyans (saiyan)*>
+    <!ELEMENT saiyan EMPTY>
+    <!ATTLIST saiyan nombre ID #REQUIRED>
+    <!ATTLIST saiyan alias CDATA #IMPLIED>
+    <!ATTLIST saiyan raza NMTOKEN #IMPLIED>
+    <!ATTLIST saiyan pelo (rojo | amarillo |azul ) #REQUIRED>
+    <!ELEMENT ordinarios (ordinario)>
+    <!ELEMENT ordinario EMPTY>
+    <!ATTLIST ordinario nombre  CDATA #REQUIRED>
+    <!ELEMENT luchadores (#PCDATA)>
+    <!ELEMENT extras (#PCDATA)>
+    <!ELEMENT mejor_personaje EMPTY>
+    <!ATTLIST mejor_personaje nombre IDREFS #REQUIRED>
+    <!ELEMENT aliens (antagonistas)>
+    <!ELEMENT antagonistas (#PCDATA | origen | enemigos)*>
+    <!ELEMENT origen (planeta+)>
+    <!ELEMENT planeta EMPTY>
+    <!ATTLIST planeta nombre ID #REQUIRED
+                    proveniencia NMTOKEN #IMPLIED>
+    <!ELEMENT enemigos (enemigo+)>
+    <!ELEMENT enemigo EMPTY>
+    <!ATTLIST enemigo nombre CDATA #REQUIRED
+                    planeta IDREF #IMPLIED
+                    estado CDATA #FIXED "no destruido">

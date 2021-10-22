@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE personajes SYSTEM "prueba_examen_dragonball.dtd" []>
+
+<personajes>
+    <humanos>
+        <protagonistas>
+            <saiyans>
+                <saiyan nombre= "goku" alias= "kakarot" raza= "humana" pelo= "rojo"/>
+                <saiyan nombre= "vegetta" alias= "gruñón" pelo= "azul"/>
+                <saiyan nombre= "gohan" pelo= "amarillo"/> 
+                <saiyan nombre= "trunks" pelo= "amarillo"/>              
+            </saiyans>
+            <ordinarios>
+                <ordinario nombre= "bulma"/>
+            </ordinarios>
+            <luchadores>krillin</luchadores>
+            <extras>satan</extras>
+            <mejor_personaje nombre= "gohan trunks"/>
+           
+            
+        </protagonistas>
+    </humanos>
+    <aliens>
+        <antagonistas>
+            <origen>
+                <planeta nombre= "tierra" proveniencia= "bio"/>
+                <planeta nombre= "namek" proveniencia= "nam"/>
+            </origen>
+            dioses
+            <enemigos>
+                <enemigo nombre= "cell" planeta= "tierra"/>
+                <enemigo nombre= "freezer" planeta= "namek"/>
+            </enemigos>
+        </antagonistas >
+    </aliens>
+</personajes>
