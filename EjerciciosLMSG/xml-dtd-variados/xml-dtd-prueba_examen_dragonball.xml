@@ -7,8 +7,8 @@
     <!ELEMENT saiyans (saiyan)*>
     <!ELEMENT saiyan EMPTY>
     <!ATTLIST saiyan nombre ID #REQUIRED
-                    alias CDATA #FIXED
-                    raza NMTOKENS #EMPLIED
+                    alias CDATA #EMPLIED
+                    raza NMTOKEN #EMPLIED
                     pelo NMTOKEN #FIXED (rojo | amarillo |azul )>
     <!ELEMENT ordinarios (ordinario)>
     <!ELEMENT ordinario EMPTY>
