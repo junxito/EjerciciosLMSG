@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE prueba_examen_dragonball [
+    
+    <!ELEMENT personajes (humanos, aliens?)>
+    <!ELEMENT humanos (protagonistas)>
+    <!ELEMENT protagonistas (#PCDATA | saiyans | ordinarios | luchadores | extras)*>
+    <!ELEMENT saiyans (saiyan)*>
+    <!ELEMENT saiyan EMPTY>
+    <!ATTLIST saiyan nombre ID #REQUIRED
+                    alias CDATA #FIXED
+                    raza NMTOKENS #EMPLIED
+                    pelo NMTOKEN #FIXED (rojo | amarillo |azul )>
+    <!ELEMENT ordinarios (ordinario)>
+    <!ELEMENT ordinario EMPTY>
+    <!ATTLIST ordinario nombre  ID #REQUIRED>
+    <!ELEMENT luchadores (#PCDATA)>
+    <!ELEMENT extras (#PCDATA)>
+    <!ENTITY useless ", el inútil, don comedia, el guasón">
+    <!ELEMENT mejor_personaje EMPTY>
+    <!ATTLIST mejor_personaje nombre IDREFS #REQUIRED>
+    <!ELEMENT aliens (antagonistas)>
+    <!ELEMENT antagonistas (orirgen, enemigos)>
+    <!ELEMENT planeta (origen+)>
+    <!ELEMENT origen EMPTY>
+    <!ATTLIST origen nombre  ID #REQUIRED
+                    proveniencia NMTOKEN #EMPLIED>
+    <!ELEMENT enemigos (enemigo+)>
+    <!ELEMENT enemigo EMPTY>
+    <!ATTLIST enemigo nombre CDATA #REQUIRED
+                    planeta IDREF #EMPLIED>
+]>
+
+<personajes>
+    <humanos>
+        <protagonistas>
+            <saiyans>
+                <saiyan nombre: "goku" alias: "kakarot" raza: "humana" pelo: "rojo"/>
+                <saiyan nombre: "vegetta" alias: "gruñón" pelo: "azul"/>
+                <saiyan nombre: "gohan" pelo: "amarillo"/>               
+            </saiyans>
+            <ordinarios>
+                <ordinario nombre: "bulma"/>
+            </ordinarios>
+            <luchadores>krillin</luchadores>
+            dioses
+            <extras>satan &useless;; </extras>
+            <mejor_personaje nombre: "gohan, trunks"/>
+           
+            
+        </protagonistas>
+    </humanos>
+    <aliens>
+        <antagonistas>
+            <origen>
+                <planeta nombre: "tierra" proveniencia: "bio"/>
+                <planeta nombre: "namek" proveniencia: "nam"/>
+            </origen>
+            <enemigos>
+                <enemigo nombre: "cell" planeta: "tierra"/>
+                <enemigo nombre: "freezer" planeta: "namek"/>
+            </enemigos>
+        </antagonistas >
+    </aliens>
+</personajes>
