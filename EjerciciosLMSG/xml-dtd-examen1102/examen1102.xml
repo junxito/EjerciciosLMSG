@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE alimentos_dieta SYSTEM "examen1102.dtd" []>
+
+<alimentos_dieta>
+    <alimentos_permitidos>
+        <permitidos>
+            <comida nombre= "bacalao con ensalada y ajos fritos" tiempo= "noche" plato= "principal"/>
+            <alimento nombre= "melón con jamón" tiempo= "noche" plato= "principal"/>
+            arroz sazonado al estilo oriental con estofado de curry al estilo japonés
+            <best_timing nombre= "helado" tiempo= "noche"/>
+        </permitidos>
+    </alimentos_permitidos>
+    <alimentos_prohibidos>
+        <prohibidos>
+            <fruta nombre= "melón" plato= "postre"/>
+            <fruta nombre= "sandía" plato= "postre"/>
+            <precocinado nombre= "pizza" plato= "principal" tiempo= "mediodia noche"/>
+        </prohibidos>
+        <momento tiempo= "mediodia" plato= "segundo"/>
+        <momento tiempo= "maniana" plato= "principal"/>
+        <momento tiempo= "noche" plato= "postre"/>
+    </alimentos_prohibidos>
+</alimentos_dieta>

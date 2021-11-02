@@ -1,0 +1,24 @@
+<!ELEMENT alimentos_dieta (alimentos_permitidos, alimentos_prohibidos)>
+<!ELEMENT alimentos_permitidos (permitidos)>
+<!ELEMENT permitidos (#PCDATA | comida | alimento | best_timing)*>
+<!ENTITY % informacion_comida "nombre CDATA #REQUIRED
+                              tiempo CDATA #FIXED 'noche'
+                              plato NMTOKEN #IMPLIED">
+<!ELEMENT comida EMPTY>
+<!ATTLIST comida %informacion_comida;>
+<!ELEMENT alimento EMPTY>
+<!ATTLIST alimento %informacion_comida;>
+<!ELEMENT best_timing EMPTY>
+<!ATTLIST best_timing %informacion_comida;>
+<!ELEMENT alimentos_prohibidos (prohibidos? | momento?)*>
+<!ELEMENT prohibidos (fruta | precocinado)*>
+<!ELEMENT fruta EMPTY>
+<!ATTLIST fruta nombre CDATA #REQUIRED
+                plato IDREF #REQUIRED>
+<!ELEMENT precocinado EMPTY>
+<!ATTLIST precocinado nombre CDATA #REQUIRED
+                      plato IDREF #REQUIRED
+                      tiempo IDREFS #IMPLIED>
+<!ELEMENT momento EMPTY>
+<!ATTLIST momento plato ID #IMPLIED
+                  tiempo ID #IMPLIED>
