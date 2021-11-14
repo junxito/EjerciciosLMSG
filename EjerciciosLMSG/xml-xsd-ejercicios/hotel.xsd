@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="hotel" type="tipoHotel"/>
+
+
+    <xs:complexType name="tipoHotel">
+        <xs:sequence>
+            <xs:element name="personaje" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <xs:complexType name="tipoPersonaje">
+        <xs:sequence>
+            <xs:element name="poder" minOccurs="1" maxOccurs="unbounded" type="xs:string"/>
+            <xs:element name="debilidad" minOccurs="1" maxOccurs="unbounded" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="nombre" type="minimoUnCaracter"/>
+    </xs:complexType>
+
+
+    <xs:simpleType name="minimoUnCaracter">
+        <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:simpleType name="debilidades">
+        <xs:restriction base= "xs:string">
+            <xs:enumeration value="Ajo"/>
+            <xs:enumeration value="Fuego"/>
+            <xs:enumeration value="Sol"/>
+            <xs:enumeration value="Cruz"/>
+            <xs:enumeration value="Estaca en el corazón"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
