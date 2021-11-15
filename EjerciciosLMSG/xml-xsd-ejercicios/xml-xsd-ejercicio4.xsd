@@ -31,7 +31,7 @@
     </xs:complexType>
 
     <xs:complexType name="tipoColor">
-        <xs:attribute name="valor" type="tipoValor"></xs:attribute>
+        <xs:attribute name="valor" type="tipoValor"/>
     </xs:complexType>
 
     <xs:simpleType name="tipoValor">
