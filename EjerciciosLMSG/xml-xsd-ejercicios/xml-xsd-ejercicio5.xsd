@@ -51,7 +51,7 @@
 
     <xs:simpleType name="tipoIp">
         <xs:restriction base="xs:string">
-            <xs:pattern value="\d{3}.\d{2}.\d.\d{2}"></xs:pattern>
+            <xs:pattern value="\d{3}.\d{2}.\d.\d{2}"/>
         </xs:restriction>
     </xs:simpleType>
 
