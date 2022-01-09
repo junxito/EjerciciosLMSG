@@ -1,0 +1,15 @@
+body {
+    width: 100%;
+    background-image: url(https://steam.cryotank.net/wp-content/gallery/bindingofisaacrebirth/The-Binding-of-Isaac-Afterbirth-02-HD-textless.png);
+    background-size: cover;
+}
+
+.video {
+    margin-left: 300px;
+}
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20pt;
+    color: #ee5109;
+    text-align: center;
+}

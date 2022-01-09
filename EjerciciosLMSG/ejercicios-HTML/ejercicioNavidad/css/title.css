@@ -1,0 +1,11 @@
+body {
+    width: 100%;
+    background-image: url(https://steam.cryotank.net/wp-content/gallery/bindingofisaacrebirth/The-Binding-of-Isaac-Afterbirth-02-HD-textless.png);
+    background-size: cover;
+}
+#titleIsaac{
+    width: 70%;
+    margin-top: 300px;
+    margin-left: 34%;
+    
+}

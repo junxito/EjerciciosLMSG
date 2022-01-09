@@ -1,0 +1,46 @@
+body {
+    width: 100%;
+    background-image: url(https://steam.cryotank.net/wp-content/gallery/bindingofisaacrebirth/The-Binding-of-Isaac-Afterbirth-02-HD-textless.png);
+    background-size: cover;
+}
+
+a {
+    color: black;
+}
+a:hover {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+#menu li {
+    width: 150px;
+    display: inline-block;
+    background: rgb(255, 140, 8);
+    color: #000000;
+    text-decoration: none;
+    margin-top: 5%;
+}
+#menu li:hover {
+    background: #fff;
+    color: #000000;
+}
+
+#menu {
+    position:relative;
+    top: 0px;
+    z-index: 999;
+}
+
+h1{
+    color: purple;
+    margin-left: 100px;
+}
+
+.apartado{
+    margin-left: 100px;
+    display: inline-block;
+    border: solid 2px white;
+    box-sizing: border-box;
+    padding: 7px 1%;;
+    width: 26%;
+}
