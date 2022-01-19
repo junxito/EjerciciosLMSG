@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.flex-container {
+    display: flex;
+    height: 100vh;
+    background-color: rgb(240, 240, 240);
+    box-sizing: border-box;
+    border: 5px solid #f50d0d;
+  }
+  
+.flex-container > div {
+    flex: 1;
+    font-size: 50px;
+    padding: 10px;
+    line-height: 75px;
+    text-align: center;
+    
+}
+
+.num1 {
+    background-color: #f50d0d;
+}
+.num2 {
+    background-color: #f5b70d;
+}
+.num3 {
+    background-color: #f1f50d;
+}
+.num4 {
+    background-color: #89f50d;
+}
+.num5 {
+    background-color: #0df534;
+}
+.num6 {
+    background-color: #0df5e9;
+}
+.num7 {
+    background-color: #0d11f5;
+}
+.num8 {
+    background-color: #b30df5;
+}
+.num9 {
+    background-color: #5d0b94;
+}
+.num10 {
+    background-color: #f50d81;
+}

@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.flex-container {
+    display: flex;
+    align-items: baseline;
+    background-color: rgb(240, 240, 240);
+    box-sizing: border-box;
+    border: 5px solid #f50d0d;
+    height: 100vh;
+  }
+  
+.flex-container > div {
+    
+    text-align: center;
+}
+
+.num1 {
+    background-color: #f50d0d;
+    font-size: 15px;
+}
+.num2 {
+    background-color: #f5b70d;
+    font-size: 6px;
+}
+.num3 {
+    background-color: #f1f50d;
+    font-size: 20px;
+}
+.num4 {
+    background-color: #89f50d;
+    font-size: 17px;
+}
+.num5 {
+    background-color: #0df534;
+    font-size: 3px;
+}
+.num6 {
+    background-color: #0df5e9;
+    font-size: 8px;
+}
+.num7 {
+    background-color: #0d11f5;
+    font-size: 40px;
+}
+.num8 {
+    background-color: #b30df5;
+    font-size: 25px;
+}
+.num9 {
+    background-color: #5d0b94;
+    font-size: 30px;
+}
+.num10 {
+    background-color: #f50d81;
+    font-size: 50px;
+}
