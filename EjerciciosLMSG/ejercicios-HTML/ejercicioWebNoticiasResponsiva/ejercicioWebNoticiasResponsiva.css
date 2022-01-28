@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.cabecera {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    height: 10vh;
+    background-color: red;
+}
+
+h1{
+    align-self: center;
+    margin-left: 5%;
+    font-size: 24pt;
+    color: rgb(255, 255, 255);
+}
+
+.publicidad {
+    display: flex;
+    position: relative;
+    top: 10vh;
+    align-content: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+}
+
+.title {
+    display: flex;
+    align-content: flex-start;
+    position: relative;
+    top: 10vh;
+    width: 40%;
+}
+
+.notisPublisFusion {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin: auto;
+}
+
+.izquierda {
+    position: relative;
+    top: 10vh;
+    display: flex;
+    flex: 66.666%;
+    margin-right: 10px;
+    flex-direction: column;
+}
+
+.derecha {
+    display: flex;
+    position: relative;
+    top: 10vh;
+    flex: 33.333%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.noticias {
+    display: flex;
+    position: relative;
+    top: 10vh;
+    align-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    padding: 10px;
+    margin: auto;
+}
+
+.publicidadBasurilla {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 992px) {
+.publicidad{
+    display: none;
+}
+
+.derecha {
+    display: none;
+}
+
+.publicidadBasurilla {
+    display: none;
+}
+.title {
+    width: 100%;
+}
+
+.izquierda{
+    width: 100%;
+}
+
+.noticias{
+    width: 80%;
+    flex-direction: column;
+}
+}
+
+
+
+
