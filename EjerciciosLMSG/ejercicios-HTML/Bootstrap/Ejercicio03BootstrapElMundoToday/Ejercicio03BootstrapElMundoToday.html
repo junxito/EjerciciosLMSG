@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio03BootstrapElMundoToday</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://kit.fontawesome.com/b1d869806a.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div class="container-fluid" style="background-color: rgb(255, 255, 255);">
+
+            <!--Header-->
+            <div class="row align-items-baseline">
+
+                <!--Parte izquierda: Conjunto de iconos-->
+                <div class="col-4 sm-2 p-3 text-black text-center">
+                    <i class="fa-brands fa-facebook-f fa-xs mx-1"></i>
+                    <i class="fa-brands fa-instagram fa-xs mx-1"></i>
+                    <i class="fa-brands fa-twitter fa-xs mx-1"></i>
+                    <i class="fa-brands fa-youtube fa-xs mx-1"></i>
+                </div>
+
+                <!--Parte central: Logo MundoToday-->
+                <div class="col-4 col-md-3 p-3 text-black" style="background-color: rgb(255, 255, 255);"><img src="img/logo-ElMundoToday.png" width="100%"></div>
+                
+                <!--Parte izquierda: Botones de Inicio de sesion y de Hacerse suscriptor-->
+                <div class="col-4 col-md p-3 text-black justify-content-center" style="background-color: rgb(255, 255, 255);">
+                    <div class="row">
+                        <div class="col text-end align-baseline d-flex justify-content-start align-items-baseline">
+                            <a href="#" class="text-dark text-decoration-none me-2 d-none d-md-block">Iniciar sesión</a>
+                            <button type="button" class="btn btn-info">
+                                <a href="suscriptor.html" class="text-dark text-decoration-none me-2">Hazte suscriptor</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--Header Segunda parte-->
+        <div class="container-fluid" style="background-color: rgb(255, 123, 0);">
+            <div class="text-center text-light">
+                <p class="m-0">- LA ACTUALIDAD DEL MAÑANA -</p>
+            </div>
+        </div>
+
+        <!--Sticky Navbar: Botones de generos de noticias-->
+        <nav class="navbar navbar-expand-sm bg-light navbar-light sticky-top">
+            <div class="container-fluid justify-content-center">
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">INTERNACIONAL</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">ESPAÑA</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">DEPORTES</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">CULTURA</a>
+                    </li>  
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">SOCIEDAD</a>
+                    </li>   
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">GENTE</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">VIDEOS</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">TIENDA</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">CIENCIA Y TECNOLOGÍA</a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">CIENCIA</a></li>
+                        <li><a class="dropdown-item" href="#">INFORMÁTICA</a></li>
+                        <li><a class="dropdown-item" href="#">GAMING</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            <div class="col-1 d-none d-md-block text-black">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </nav>
+
+        <!--Container de noticias grandes-->
+        <div class="container">
+
+            <div class="row justify-content-center">
+                <div class="col-md-7 px-7 mt-3">
+                    <div class="card">
+                        <img class="card-img-top" src="img/noticiagrande1.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title display-6"><dt>La humanidad echa de menos los viejos tiempos en los que su única preocupación era la destrucción de la Tierra por el cambio climático y no por la ameneza nuclear</dt></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 px-7 mt-3">
+                    <div class="card">
+                        <img class="card-img-top" src="img/noticiagrande2.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title display-6"><dt>"Me estaba duchando y Josep Borrell empezó a golpear la puerta del baño amenazando con apagarme el agua caliente", denuncia un hombre</dt></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Container de noticias pequeñas-->
+        <div class="container">
+            <div class="row align-baseline justify-content-between">
+                <div class="col-md-5 px-4 mt-3 md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="img/noticiapequenya1.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title display-6"><dt>Rosalía sorprende en Twitter con el mensaje "Una motomami es un sujeto trascendental y se constituye como principio autofundado y fundante de la realidad, idéntico en sí mismo y sustraído de toda historicidad"</dt></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5 px-4 mt-3 md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="img/noticiapequenya2.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title display-6"><dt>La madre de Rigoberta Bandini saca una canción titulada "Qué"</dt></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-baseline justify-content-between">
+                <div class="col-md-5 px-4 mt-3 md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="img/noticiapequenya3.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title display-6"><dt>Tarda un año en descubrir que su televisor está estropeado porque pensaba que las películas de Filmin "eran así"</dt></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5 px-4 mt-3 md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="img/noticiapequenya4.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title display-6"><dt>Una pareja decide abrir la relación a otras series</dt></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <div class="text-center text-lg-start d-flex justify-content-center" style="background-color: rgb(37, 37, 37);">
+            <div class="container-fluid md">
+
+                <!--Row para iconos del footer-->
+                <div class="row align-items-baseline">
+                    <div class="col-md p-3 mt-3 text-black text-center">
+                        <i class="fa-brands fa-twitter fa-xl mx-3" style="color: rgb(224, 95, 20);"></i>
+                        <i class="fa-brands fa-instagram fa-xl mx-3" style="color: rgb(224, 95, 20);"></i>
+                        <i class="fa-brands fa-facebook-f fa-xl mx-3" style="color: rgb(224, 95, 20);"></i>
+                        <i class="fa-brands fa-youtube fa-xl mx-3" style="color: rgb(224, 95, 20);"></i>
+                    </div>
+                </div>
+
+                <!--Row para logo del footer-->
+                <div class="row">
+                    <div class="col-md-2 p-3 mx-auto">
+                        <img src="img/logo-ElMundoToday2.png" alt="logo2" class="img-fluid"/>
+                    </div>
+                </div>
+
+                <!--Row para fila de palabras del footer-->
+                <div class="row justify-content-between">
+                    <div class="col-4 p-3 mx-auto text-light">
+                        <a href="#" class="text-light text-decoration-none mx-1">POLÍTICA DE COOKIES</a>
+                        <a href="#" class="text-light text-decoration-none mx-1">AVISO LEGAL Y POLÍTICA DE PRIVACIDAD</a>
+                        <a href="#" class="text-light text-decoration-none mx-1">CONTACTO Y PUBLICIDAD</a>
+                        <a href="#" class="text-light text-decoration-none mx-1">TIENDA</a>
+                    </div>
+                </div>
+
+                <!--Row para imagen del footer-->
+                <div class="row">
+                    <div class="col-md-1 p-3 mx-auto">
+                        <img src="img/footer.png" alt="footer" class="img-fluid"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+

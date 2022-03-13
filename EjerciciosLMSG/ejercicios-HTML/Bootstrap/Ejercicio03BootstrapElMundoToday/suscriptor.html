@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejercicio03BootstrapElMundoToday</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://kit.fontawesome.com/b1d869806a.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <!--Header-->
+        <div class="container-fluid" style="background-color: #eb621a !important;">
+            <div class="row justify-content-center py-5">
+                <div class="col-12 text-center mt-4">
+                    <img src="img/logo_suscriptor_elMundoToday.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-12 text-center">
+                    <h1 class="display-5 sign-h mt-4" style="color: white; font-weight: bold;">Tú haces posible la Verdad.</h1>
+                </div>
+                <div class="col-12 text-center mb-4">
+                    <h2 class="fs-5 text-white mt-2">Solo necesitamos unos cuantos datos antes de darte la bienvenida a la comunidad.</h2>
+                </div>
+            </div>
+        </div>
+
+        <!--Formulario-->
+        <div class="container-fluid mt-5 pt-5">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <h2 class="fs-5">
+                        <strong>Has elegido:</strong>
+                        suscripción mensual.
+                    </h2>
+                    <h2 class="fs-5">
+                        <strong>Precio:</strong>
+                        3€ / mes
+                    </h2>
+                </div>
+                <div class="col col-md-8 col-lg-7 mt-5 pt-5">
+                    <hr>
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-start align-items-baseline">
+                            <h3 class="fw-normal fs-4">Información de la cuenta</h3>
+                            <p class="ms-2"><i>¿Ya tienes una cuenta?</i></p>
+                            <p class="ms-2" style="color: #eb621a;"><i>log in</i></p>
+                        </div>
+                        <div class="col-12">
+                            <form class="was-validated">
+                                <div class="d-flex flex-column py-2">
+                                    <label for="username" class="form-label mb-1 mt-1">Nombre de usuario</label>
+                                    <input type="text" class="form-control py-md-2" name="username" required>
+                                </div>
+                                <div class="d-flex flex-column py-2">
+                                    <label for="password" class="form-label mb-1 mt-1">Contraseña</label>
+                                    <input type="password" class="form-control py-md-2" name="password" required>
+                                </div>
+                                <div class="d-flex flex-column py-2">
+                                    <label for="password" class="form-label mb-1 mt-1">Confirma tu contraseña</label>
+                                    <input type="password" class="form-control py-md-2" name="password" required>
+                                </div>
+                                <div class="d-flex flex-column py-2">
+                                    <label for="email" class="form-label mb-1 mt-1">Dirección de correo electrónico</label>
+                                    <input type="email" class="form-control py-md-2" name="email" required>
+                                </div>
+                                <div class="d-flex flex-column py-2">
+                                    <label for="email" class="form-label mb-1 mt-1">Confirmar la dirección de correo electrónico</label>
+                                    <input type="email" class="form-control py-md-2" name="email" required>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+    
+                    <div class="row bg-light py-4 mt-4">
+                        <div class="col-12 d-flex justify-content-start align-items-baseline">
+                            <h3 class="fw-normal fs-4">Información de pago</h3>
+                            <p class="ms-2"><i>Aceptamos Visa y Mastercard</i></p>
+                        </div>
+                        <div class="col-12">
+                            <form class="was-validated">
+                                <div class="d-flex flex-column py-2">
+                                    <label for="payment" class="form-label mb-1 mt-1">Número de la tarjeta</label>
+                                    <input type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="1234 1234 1234 1234" required>
+                                </div>
+    
+                                <div class="row row-cols-2 g-2 py-2 mt-1">
+                                    <div class="col">
+                                        <label for="date" class="form-label mb-1 mt-1">Fecha de expiración</label>
+                                        <input type="date" class="form-control py-md-2" name="date" required>
+                                    </div>
+                                    <div class="col">
+                                        <label for="cvc" class="form-label mb-1 mt-1">CVC</label>
+                                        <input type="text" class="form-control py-md-2" placeholder="CVC" name="cvc" required>
+                                    </div>
+                                </div>
+    
+                                <img src="img/powered.png" alt="" class="mt-3" style="width: 20%;">
+    
+                                <div class="row row-cols-2 g-2 py-2 mt-1">
+                                    <div class="col">
+                                        <label for="cupon" class="form-label mb-1 mt-1">Cupón de descuento</label>
+                                        <div class="d-flex align-items-baseline">
+                                            <input type="text" class="form-control py-md-2 border-1" name="cupon">
+                                            <div class="text-decoration-underline ms-2">Aplicar</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+    
+                    <div class="row">
+                        <button type="submit" class="btn bg-dark text-white col-md-4 col-12 py-3 mt-3 rounded-0">Enviar y pagar »</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Footer-->
+        <div class="text-center text-lg-start d-flex justify-content-center" style="background-color: rgb(37, 37, 37);">
+            <div class="container-fluid md">
+
+                <!--Row para iconos del footer-->
+                <div class="row align-items-baseline">
+                    <div class="col-md p-3 mt-3 text-black text-center">
+                        <i class="fa-brands fa-twitter fa-xl mx-3" style="color: rgb(224, 95, 20);"></i>
+                        <i class="fa-brands fa-instagram fa-xl mx-3" style="color: rgb(224, 95, 20);"></i>
+                        <i class="fa-brands fa-facebook-f fa-xl mx-3" style="color: rgb(224, 95, 20);"></i>
+                        <i class="fa-brands fa-youtube fa-xl mx-3" style="color: rgb(224, 95, 20);"></i>
+                    </div>
+                </div>
+
+                <!--Row para logo del footer-->
+                <div class="row">
+                    <div class="col-md-2 p-3 mx-auto">
+                        <img src="img/logo-ElMundoToday2.png" alt="logo2" class="img-fluid"/>
+                    </div>
+                </div>
+
+                <!--Row para fila de palabras del footer-->
+                <div class="row justify-content-between">
+                    <div class="col-4 p-3 mx-auto text-light">
+                        <a href="#" class="text-light text-decoration-none mx-1">POLÍTICA DE COOKIES</a>
+                        <a href="#" class="text-light text-decoration-none mx-1">AVISO LEGAL Y POLÍTICA DE PRIVACIDAD</a>
+                        <a href="#" class="text-light text-decoration-none mx-1">CONTACTO Y PUBLICIDAD</a>
+                        <a href="#" class="text-light text-decoration-none mx-1">TIENDA</a>
+                    </div>
+                </div>
+
+                <!--Row para imagen del footer-->
+                <div class="row">
+                    <div class="col-md-1 p-3 mx-auto">
+                        <img src="img/footer.png" alt="footer" class="img-fluid"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
