@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Transformacion de superheroes con xquery</title>
+</head>
+<body>
+    " { for $superheroe in 
+    doc('superheroes.xml')/marvel/superheroe let $nombre :=
+    $superheroe/@nombre let $poderes := $superheroe/@poderes let 
+    $amigos := $superheroe/@amigos let $nivel :=
+    $superheroe/@nivel return "
+    <div>
+        <table align="center" border="1">
+            <tbody><tr>
+                <td style="font-weight:bolder;" colspan="2"> 
+                { data($nombre) } </td>
+            </tr>
+                <tr>
+                    <td>Poderes: </td>
+                    <td> { data($poderes) } </td>
+                </tr>
+                <tr>
+                    <td>Amigos: </td>
+                    <td> { data($amigos) } </td>
+                </tr>
+                <tr>
+                    <td>Nivel: </td>
+                    <td> { data($nivel) } </td>
+                </tr>
+            </tbody></table>  
+        <br><br>
+    </div>
+    " } "
+</body>
+</html>
